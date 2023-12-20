@@ -12,3 +12,13 @@ string Prompt2(string message)
     string value = Console.ReadLine(); // Считываем с консоли строку
     return value; // Возвращаем результат
 }
+
+string[] InputArray(int length) // ввести массив
+{
+    string[] array = new string[length]; // объявляем массив
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = Prompt2($"Введите {i + 1}-й элемент "); 
+    }
+    return array;
+}
