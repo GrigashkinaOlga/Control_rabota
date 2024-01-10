@@ -53,3 +53,8 @@ string[] NewArray(string[] array)
     return arr;
 }
 
+int length = Prompt1("Введите количество элементов: ");
+string[] array = InputArray(length);
+PrintArray(array);
+string[] arr = NewArray(array);
+PrintArray(arr);
