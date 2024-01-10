@@ -30,4 +30,26 @@ void PrintArray(string[] array) // метод вывода массива на �
     Console.WriteLine(" ]");
 }
 
+string[] NewArray(string[] array) 
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        string simvol = array[i];
+        if (simvol.Length <= 3)
+            count = count + 1;
+    }
+    string[] arr = new string[count];
+    int j = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        string simvol = array[i];
+        if (simvol.Length <= 3)
+        {
+            arr[j] = simvol;
+            j = j + 1;
+        }
+    }
+    return arr;
+}
 
