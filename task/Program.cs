@@ -22,3 +22,12 @@ string[] InputArray(int length) // ввести массив
     }
     return array;
 }
+
+void PrintArray(string[] array) // метод вывода массива на экран
+{
+    Console.Write("[ ");
+    Console.Write(string.Join(" , ", array));
+    Console.WriteLine(" ]");
+}
+
+
